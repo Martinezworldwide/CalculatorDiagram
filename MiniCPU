@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator - CPU Architecture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #00bcd4;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        .cpu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .cpu-diagram {
+            position: relative;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(0, 188, 212, 0.7);
+            width: 700px;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .glow-box {
+            background-color: rgba(0, 188, 212, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #00bcd4;
+            box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.7);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Mini CPU Architecture - Digital Calculator</h2>
+    <p>🚀 This visualization shows how the digital calculator is structured like a small CPU.</p>
+
+    <div class="cpu-container">
+        <div class="cpu-diagram">
+            <svg viewBox="0 0 700 500">
+
+                <!-- User Input -->
+                <text x="10" y="100" fill="#00bcd4" font-size="16">User Input (Binary Numbers)</text>
+                <line x1="50" y1="100" x2="250" y2="100" stroke="#00bcd4" stroke-width="2"/>
+
+                <!-- Registers (Temporary Storage) -->
+                <rect x="250" y="70" width="200" height="50" stroke="white" fill="none"></rect>
+                <text x="320" y="100" fill="white" font-size="14">Registers</text>
+
+                <!-- Control Unit -->
+                <rect x="250" y="150" width="200" height="80" stroke="white" fill="none"></rect>
+                <text x="300" y="180" fill="white" font-size="16">Control Unit</text>
+                <text x="270" y="200" fill="white" font-size="12">Manages Operations</text>
+
+                <!-- ALU Section -->
+                <rect x="250" y="260" width="200" height="100" stroke="white" fill="none"></rect>
+                <text x="330" y="290" fill="white" font-size="16">ALU</text>
+                <text x="270" y="310" fill="white" font-size="12">Performs Binary Arithmetic</text>
+
+                <!-- Binary Arithmetic Modules -->
+                <rect x="500" y="260" width="160" height="100" stroke="white" fill="none"></rect>
+                <text x="530" y="290" fill="white" font-size="14">Binary Adder</text>
+                <text x="530" y="310" fill="white" font-size="14">Binary Subtractor</text>
+                <text x="530" y="330" fill="white" font-size="14">Binary Multiplier</text>
+                <text x="530" y="350" fill="white" font-size="14">Binary Divider</text>
+
+                <!-- Output -->
+                <text x="550" y="120" fill="#ffeb3b" font-size="16">Final Output</text>
+                <line x1="450" y1="120" x2="600" y2="120" stroke="#ffeb3b" stroke-width="2"/>
+
+                <!-- Connecting Lines -->
+                <line x1="350" y1="120" x2="350" y2="150" stroke="white" stroke-width="2"/>
+                <line x1="350" y1="230" x2="350" y2="260" stroke="white" stroke-width="2"/>
+                <line x1="450" y1="310" x2="500" y2="310" stroke="#00bcd4" stroke-width="2"/>
+                <line x1="350" y1="310" x2="500" y2="310" stroke="#00bcd4" stroke-width="2"/>
+
+            </svg>
+        </div>
+    </div>
+
+    <div class="glow-box">
+        <p>💡 **How It Works:** The digital calculator functions as a mini-CPU, processing binary arithmetic via the ALU and its associated modules.</p>
+    </div>
+
+</body>
+</html>
