@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Block Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .block {
+            width: 300px;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .block:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .arrow {
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            margin: 5px;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #222;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .block:hover .tooltip {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>System Block Diagram - Binary Arithmetic Digital Calculator</h2>
+    
+    <div class="container">
+        <div class="block">
+            Keyboard Input
+            <div class="tooltip">User enters binary numbers and selects operation</div>
+        </div>
+
+        <div class="arrow"></div>
+
+        <div class="block">
+            Arithmetic Logic Unit (ALU)
+            <div class="tooltip">Processes binary operations using Adder, Subtractor, Multiplier, and Divider</div>
+        </div>
+
+        <div class="arrow"></div>
+
+        <div class="block">
+            Binary Adder
+            <div class="tooltip">Performs addition of two binary numbers</div>
+        </div>
+
+        <div class="block">
+            Binary Subtractor
+            <div class="tooltip">Handles binary subtraction using two's complement</div>
+        </div>
+
+        <div class="block">
+            Binary Multiplier
+            <div class="tooltip">Executes binary multiplication using shift-and-add</div>
+        </div>
+
+        <div class="block">
+            Binary Divider
+            <div class="tooltip">Carries out binary division using restoring method</div>
+        </div>
+
+        <div class="arrow"></div>
+
+        <div class="block">
+            Output Display
+            <div class="tooltip">Shows computed results in binary and decimal format</div>
+        </div>
+    </div>
+
+</body>
+</html>
