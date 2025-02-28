@@ -20,7 +20,7 @@
         }
 
         .block {
-            width: 300px;
+            width: 350px;
             padding: 15px;
             background-color: #3498db;
             color: white;
@@ -32,9 +32,15 @@
             cursor: pointer;
         }
 
-        .block:hover {
-            background-color: #2980b9;
-            transform: scale(1.05);
+        .block-description {
+            width: 330px;
+            background-color: #ecf0f1;
+            color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 5px;
+            text-align: center;
         }
 
         .arrow {
@@ -44,24 +50,6 @@
             margin: 5px;
         }
 
-        .tooltip {
-            display: none;
-            position: absolute;
-            bottom: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #222;
-            color: white;
-            padding: 8px;
-            border-radius: 5px;
-            font-size: 12px;
-            white-space: nowrap;
-        }
-
-        .block:hover .tooltip {
-            display: block;
-        }
-
     </style>
 </head>
 <body>
@@ -69,47 +57,48 @@
     <h2>System Block Diagram - Binary Arithmetic Digital Calculator</h2>
     
     <div class="container">
-        <div class="block">
-            Keyboard Input
-            <div class="tooltip">User enters binary numbers and selects operation</div>
+        <div class="block">Keyboard Input</div>
+        <div class="block-description">
+            User enters binary numbers and selects an operation (addition, subtraction, multiplication, or division).
         </div>
 
         <div class="arrow"></div>
 
-        <div class="block">
-            Arithmetic Logic Unit (ALU)
-            <div class="tooltip">Processes binary operations using Adder, Subtractor, Multiplier, and Divider</div>
+        <div class="block">Arithmetic Logic Unit (ALU)</div>
+        <div class="block-description">
+            The ALU processes binary operations using the adder, subtractor, multiplier, and divider circuits.
         </div>
 
         <div class="arrow"></div>
 
-        <div class="block">
-            Binary Adder
-            <div class="tooltip">Performs addition of two binary numbers</div>
+        <div class="block">Binary Adder</div>
+        <div class="block-description">
+            Performs addition of two binary numbers using logic gates.
         </div>
 
-        <div class="block">
-            Binary Subtractor
-            <div class="tooltip">Handles binary subtraction using two's complement</div>
+        <div class="block">Binary Subtractor</div>
+        <div class="block-description">
+            Handles binary subtraction using two's complement representation.
         </div>
 
-        <div class="block">
-            Binary Multiplier
-            <div class="tooltip">Executes binary multiplication using shift-and-add</div>
+        <div class="block">Binary Multiplier</div>
+        <div class="block-description">
+            Executes binary multiplication using the shift-and-add method.
         </div>
 
-        <div class="block">
-            Binary Divider
-            <div class="tooltip">Carries out binary division using restoring method</div>
+        <div class="block">Binary Divider</div>
+        <div class="block-description">
+            Carries out binary division using restoring or non-restoring division methods.
         </div>
 
         <div class="arrow"></div>
 
-        <div class="block">
-            Output Display
-            <div class="tooltip">Shows computed results in binary and decimal format</div>
+        <div class="block">Output Display</div>
+        <div class="block-description">
+            Shows the computed results in binary and decimal format for user interpretation.
         </div>
     </div>
 
 </body>
 </html>
+
